@@ -6,15 +6,14 @@
 #
 function rvm_install() {
 	\curl -L https://get.rvm.io | bash -s
+	rm -f $HOME/.bash_profile
+	source $HOME/.profile
 }
 
 # rvm_requirements()
 #
 # Run the "rvm requirements" for system checkup
 #
-function rvm_requirements() {
-	
-}
 
 # rvm_run()
 #
