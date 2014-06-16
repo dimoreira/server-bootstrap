@@ -14,27 +14,63 @@ echo -e "\e[36mInstalling LibCurl Development Headers with OpenSSL security patc
 sudo apt-get install -y libcurl4-openssl-dev
 echo -e "\e[32mFinished LibCurl installation\e[0m"
 
-# Add colors to the bash prompt
+
+# ======= Running scripts ========= #
+# ================================= #
+
+# Bash
+#
+# This script just edits the .bashrc file adding
+# color support for bash prompt.
+#
 source ./src/bash.sh
 bash_run
 
-# Install and Setup Git
+# Git
+#
+# This script runs Git installation from apt-get
+# and after runs a setup based on an open-sourced
+# configuration file with some alias configs.
+#
 source ./src/git.sh
 git_run
 
-# Setup Vim with Vundle
+# Vim
+#
+# This script runs Vim installation from apt-get
+# and after install Vundle for Vim plugins administration.
+# After all downloads and install a setup based on an
+# open-sources configuration file with some plugins.
+#
 source ./src/vim.sh
 vim_run
 
-# Setup Tmux (Terminal Multiplexer)
+# Tmux (Terminal Multiplexer)
+#
+# This script runs Tmux installation from apt-get.
+#
 source ./src/tmux.sh
 tmux_run
 
-# Install Nginx
+# Nginx
+#
+# This script adds a new apt-repository from PPA for
+# Nginx and runs the Nginx installation from apt-get.
+# 
 source ./src/nginx.sh
 nginx_run
 
-# Install RVM (Ruby Version Manager)
+# RVM (Ruby Version Manager)
+#
+# This script runs RVM installation directly from
+# RVM website
+#
+# Usage: rvm_run
+#
+# You can use some variables for setup custom
+# installation of ruby binaries:
+#
+# RVM_RUBY_VERSION=2.1.2
 #source ./src/rvm.sh
 #rvm_run
 
