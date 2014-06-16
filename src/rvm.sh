@@ -8,6 +8,7 @@ function rvm_install() {
 	\curl -L https://get.rvm.io | bash -s
 	rm -f $HOME/.bash_profile
 	source $HOME/.profile
+	source $HOME/.rvm/script/rvm
 }
 
 # rvm_requirements()
