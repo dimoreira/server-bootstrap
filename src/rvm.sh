@@ -7,8 +7,8 @@
 function rvm_install() {
 	\curl -L https://get.rvm.io | bash -s
 	rm -f $HOME/.bash_profile
+	echo "source $HOME/.rvm/scripts/rvm" >> $HOME/.profile
 	source $HOME/.profile
-	source $HOME/.rvm/scripts/rvm
 }
 
 # rvm_requirements()
@@ -26,7 +26,6 @@ function rvm_requirements() {
 #
 function rvm_ruby_install() {
 	rvm install $RVM_RUBY_VERSION
-	source $HOME/.rvm/scripts/rvm
 	rb_v= $(rvm current)
 	rvm use $rb_v
 }
