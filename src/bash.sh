@@ -18,8 +18,10 @@ function bash_run() {
 	echo -e "\e[36mUpdating bash prompt to enable colors\e[0m"
 	if bash_color_prompt; then
 		echo -e "\e[32mBash color prompt updated\e[0m"
+		echo
 	else
 		echo -e "\e[31mFailed on bash color prompt update\e[0m"
+		echo
 	fi
 }
 

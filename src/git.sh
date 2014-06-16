@@ -29,11 +29,14 @@ function git_run() {
 		echo -e "\e[36mGit setup from configuration\e[0m"
 		if git_setup; then
 			echo -e "\e[32mGit configured\e[0m"
+			echo
 		else
 			echo -e "\e[31mFailed Git configuration\e[0m"
+			echo
 		fi
 	else
 		echo -e "\e[31mFailed git installation\e[0m"
+		echo
 	fi
 }
 

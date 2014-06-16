@@ -46,15 +46,19 @@ function vim_run() {
 				echo -e "\e[36mVim setup from configuration\e[0m"
 				if vim_setup; then
 					echo -e "\e[32mVim configured\e[0m"
+					echo
 				else
 					echo -e "\e[31Failed Vim configuration\e[0m"
+					echo
 				fi
 			else
 				echo -e "\e[31mFailed Vundle installation\e[0m"
+				echo
 			fi
 		fi
 	else
 		echo -e "\e[31mFailed Vim installation\e[0m"
+		echo
 	fi
 }
 

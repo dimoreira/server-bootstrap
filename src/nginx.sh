@@ -18,8 +18,10 @@ function nginx_run() {
 	echo -e "\e[36mInstalling Nginx from ppa repository\e[0m"
 	if nginx_install; then
 		echo -e "\e[32mNginx installed\e[0m"
+		echo
 	else
 		echo -e "\e[31mFailed Nginx installation\e[0m"
+		echo
 	fi
 }
 

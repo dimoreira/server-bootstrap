@@ -26,16 +26,19 @@ function nodejs_run() {
 	echo -e "\e[36mInstalling NodeJs dependencies\e[0m"
 	if nodejs_dependencies; then
 		echo -e "\e[32mInstalled NodeJs dependencies\e[0m"
-		echo "\n"
+		echo
 		
 		echo -e "\e[36mInstalling NodeJs from ppa repository\e[0m"
 		if nodejs_install; then
 			echo -e "\e[32mInstalled NodeJs\e[0m"
+			echo
 		else
 			echo -e "\e[31mFailed NodeJs installation\e[0m"
+			echo
 		fi
 	else
 		echo -e "\e[31mFailed NodeJs dependencies installation\e[0m"
+		echo
 	fi
 }
 

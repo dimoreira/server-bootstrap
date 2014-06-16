@@ -16,8 +16,10 @@ function tmux_run() {
 	echo -e "\e[36mInstalling tmux from apt-get\e[0m"
 	if tmux_install; then
 		echo -e "\e[32mTmux installed\e[0m"
+		echo
 	else
 		echo -e "\e[31mFailed tmux installation\e[0m"
+		echo
 	fi
 }
 
