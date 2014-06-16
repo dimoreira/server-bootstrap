@@ -35,6 +35,10 @@ source ./src/nginx.sh
 nginx_run
 
 # Install RVM (Ruby Version Manager)
-source ./src/rvm.sh
-rvm_run
+#source ./src/rvm.sh
+#rvm_run
+
+# Install NodeJS
+#source ./src/nodejs.sh
+#nodejs_run
 
