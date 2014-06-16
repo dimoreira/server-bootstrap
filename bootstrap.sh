@@ -3,16 +3,19 @@
 # Update the source lists
 echo -e "\e[36mUpdating apt-get source lists\e[0m"
 sudo apt-get update
+echo
 
 # Add essentials for install Linux libraries
 echo -e "\e[36mInstalling essential libraries for Linux\e[0m"
 sudo apt-get install -y build-essential python-software-properties curl
 echo -e "\e[32mFinished essential libraries installation\e[0m"
+echo
 
 # Development files for libcurl (used by Ruby source on compilation)
 echo -e "\e[36mInstalling LibCurl Development Headers with OpenSSL security patches\e[0m"
 sudo apt-get install -y libcurl4-openssl-dev
 echo -e "\e[32mFinished LibCurl installation\e[0m"
+echo
 
 
 # ======= Running scripts ========= #
