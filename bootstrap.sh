@@ -70,9 +70,10 @@ nginx_run
 # You can use some variables for setup custom
 # installation of ruby binaries:
 #
-# RVM_RUBY_VERSION=2.1.2
-#source ./src/rvm.sh
-#rvm_run
+#RVM_RUBY_VERSION=2.1.2
+#RVM_RAILS_VERSION=3.2.14
+source ./src/rvm.sh
+rvm_run
 
 # Install NodeJS
 #source ./src/nodejs.sh
