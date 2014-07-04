@@ -63,6 +63,10 @@ tmux_run
 source ./src/nginx.sh
 nginx_run
 
+# Install NodeJS
+source ./src/nodejs.sh
+nodejs_run
+
 # RVM (Ruby Version Manager)
 #
 # This script runs RVM installation directly from
@@ -73,12 +77,8 @@ nginx_run
 # You can use some variables for setup custom
 # installation of ruby binaries:
 #
-#RVM_RUBY_VERSION=2.1.2
-#RVM_RAILS_VERSION=3.2.14
+RVM_RUBY_VERSION=2.1.2
+RVM_RAILS_VERSION=3.2.14
 source ./src/rvm.sh
 rvm_run
-
-# Install NodeJS
-#source ./src/nodejs.sh
-#nodejs_run
 
